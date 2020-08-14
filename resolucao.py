@@ -16,6 +16,14 @@ def imprimirOrdenado(bd):
 
     return bd
 
+def calcularEstoque(bd):]
+    ele
+    for i in range(len(bd)):
+    print(newbd[i])
+
+
+
+
 # Abro como leitura (read) em codificação utf8
 bd = json.load(open('brokendatabase.json','r', encoding='utf-8'))
 
