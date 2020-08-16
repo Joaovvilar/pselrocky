@@ -5,7 +5,6 @@
 # ['ø', 'æ', '¢', 'ß']
 
 import json
-import requests
 from operator import itemgetter
 
 #ordena em ordem crescente as categorias e os ID's , imprimindo-os ao final
@@ -65,4 +64,5 @@ calcularEstoque(bd)
 #escreve o bd corrigido para a saída
 with open('saida.json', 'w', encoding='utf-8') as saida:
     #para evitar uma sequência de escape \u, foi necessário assegurar que não escaparia como ASCII
+    #https://stackoverflow.com/questions/18337407/saving-utf-8-texts-in-json-dumps-as-utf8-not-as-u-escape-sequence
     json.dump(newbd, saida, ensure_ascii=False)
